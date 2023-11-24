@@ -24,12 +24,12 @@ def getcrawling(request):
     driver.get(url)
     time.sleep(10)
 
-    email = 'tiger117420'
+    email = ''
     input_id = driver.find_element(By.NAME, "username")
     input_id.clear()
     input_id.send_keys(email)
 
-    password = 'tiger1125^^'
+    password = ''
     input_pw = driver.find_element(By.NAME, "password")
     input_pw.clear()
     input_pw.send_keys(password)

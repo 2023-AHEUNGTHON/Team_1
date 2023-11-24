@@ -9,7 +9,7 @@ def chatgpt_api(request):
     question = request.GET.get('user_input')
 
     # ChatGPT API 호출
-    chatgpt_api_key = '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'
+    chatgpt_api_key = ''
     api_url = 'https://api.openai.com/v1/chat/completions'
     headers = {
         'Content-Type': 'application/json',
