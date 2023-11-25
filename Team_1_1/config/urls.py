@@ -30,4 +30,5 @@ urlpatterns = [
     path('chatgpt-api/', chatgpt_api, name='chatgpt_api'),
     path('getcrawling/', getcrawling, name='getcrawling'),
     path('event/', PostListView.as_view(),),
+    path('api/', include('aid.urls')),
 ]
