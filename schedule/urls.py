@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from solution.views import chatgpt_api
+from instagrams.views import getcrawling, PostListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('aid.urls')),
+    path('chatgpt-api/', chatgpt_api, name='chatgpt_api'),
+    path('getcrawling/', getcrawling, name='getcrawling'),
+    path('event/', PostListView.as_view(),),
 ]
 
